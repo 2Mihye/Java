@@ -1,0 +1,16 @@
+package com.kh.practice2.func;
+
+import java.util.Scanner;
+
+public class CastingPractice1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String a;
+		System.out.print("¹®ÀÚ : ");
+		a = sc.next();
+		
+		System.out.println(a + " unicode : " + (int)a)
+	}
+
+}

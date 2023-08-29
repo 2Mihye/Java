@@ -1,0 +1,11 @@
+package com.kh.scannersample;
+
+public class Scannerexam {
+	public static void main(String[] args) {
+		// 정수 두 개를 입력받아 두 수의 합, 차, 곱, 나누기 한 몫과 나머지 출력
+		int num1 = 30;
+		int num2 = 3;
+		
+		System.out.println(num1 - num2);
+	}
+}
