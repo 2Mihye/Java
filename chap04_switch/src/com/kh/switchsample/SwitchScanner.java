@@ -50,22 +50,25 @@ public class SwitchScanner {
 		System.out.print("2.무뚝뚝 / ");
 		System.out.println("3.오감자 ");
 		
-		
+		int choice;
 		boolean isChoice = false;
-		int snack = sc.nextInt();
+		// choice = sc.nextInt();
 		
 		while (!isChoice) {
+			choice = sc.nextInt();
 		
-			switch (snack) {
+			switch (choice) {
 				case 1:
 					System.out.println("1.포테토칩 주문하셨습니다.");
 					isChoice = true;
 					break;
 				case 2:
 					System.out.println("2.무뚝뚝 주문하셨습니다.");
+					isChoice = true;
 					break;
 				case 3:
 					System.out.println("3.오감자 주문하셨습니다.");
+					isChoice = true;
 					break;
 				default:
 					System.out.println("잘못된 주문입니다. 다시 입력해주세요.");
