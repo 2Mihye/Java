@@ -10,7 +10,7 @@ public class IfPractice1 {
 		
 		System.out.println("1.입력 / 2.수정 / 3.조회 / 4.삭제 / 7.종료");
 		System.out.println("메뉴 번호를 입력하세요 : ");
-		while (!choiceMenu) {
+		 
 			menu = sc.nextInt();
 			switch (menu) {
 				case 1:
