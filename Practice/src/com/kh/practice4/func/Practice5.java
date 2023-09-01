@@ -12,9 +12,9 @@ public class Practice5 {
 		
 		for(int i = 1; i <= num; i++) {
 			num += i;
-			System.out.println ( );
+			System.out.println ("현재까지 총합은 " + num + " 입니다." );
 		}
-		// 선생님 생신 축하드려요.. 저는 여기까지가 한계였슴미다..
+		
 	}
 
 }
