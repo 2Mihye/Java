@@ -1,5 +1,5 @@
 package com.kh.switchsample;
-
+ 
 import java.util.Scanner;
 
 public class SwitchCoffee {
