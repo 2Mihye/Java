@@ -15,10 +15,11 @@ public class Circle {
 	
 // 멤버변수
 	double PI = 3.14; // 원주율
-	int radius = 1; 반지름
-
+	int radius = 1; //반지름
+	
+	//생성자
 	public Circle() {
-		// 기본 생성자로 내버려두고 아무런 초기화를 진행하지 않는다.
+		
 	}
 	
 	public void incrementRadius() {
