@@ -6,7 +6,10 @@ public class ArrayPractice9 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		char chicken = sc.next().charAt(0);
+		char SeachChicken = sc.next().charAt(0);
+		
+		String[] chicken = {"BBQ","교촌","지코바"};
+		
 	}
 
 }
