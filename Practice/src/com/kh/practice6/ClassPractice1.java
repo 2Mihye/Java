@@ -1,26 +1,29 @@
 package com.kh.practice6;
 
 public class ClassPractice1 {
+	
+	// 1. 멤버변수
 	String memberId, memberPwd, memberName, phone, email;
 	int age;
 	char gender;
 	
-	public ClassPractice1 (String memberId, String memberPwd, String memberName, String phone, String email, int age, char gender) {
-		this.memberId = memberId;
-		this.memberPwd = memberPwd;
+	//2. 생성자 + Member() // 이름을 바꿔야 하기 때문에 진짜 필요한건 Name 하나만이기 때문에 모든 생성자를 다 만들 필요가 없음.
+	/*
+	public Member(char gender) {
+	this.gender = gender;
+	}
+	*/
+	public ClassPractice1 () {
+	
+	}
+	
+	public void ChangeName(String memberName) {
 		this.memberName = memberName;
-		this.phone = phone;
-		this.email = email;
-		this.age = age;
-		this.gender = gender;
 	}
 	
-	public void ChangeName(String name) {
-		String name = 
-	}
-	
+	// printName():void
 	public void PrintName() {
-		System.out.println();
+		System.out.println("이름 : " + memberName);
 	}
 	
 }
