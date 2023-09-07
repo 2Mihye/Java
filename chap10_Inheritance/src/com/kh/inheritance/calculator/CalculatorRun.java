@@ -2,10 +2,10 @@ package com.kh.inheritance.calculator;
 
 import java.util.Scanner;
 
-public class CalculatorRun extends Calculator { // 상속
+public class CalculatorRun extends CalculatorForMod { // 상속
 
 	public static void main(String[] args) {
-		// Scanner sc = new Scanner (System.in);
+		Scanner sc = new Scanner (System.in);
 		// System.out.println("숫자 1 : ");
 		// int num1 = sc.nextInt();
 		// System.out.println("숫자 2 : ");
