@@ -12,7 +12,7 @@ public class Parent {
 	}
 	
 	Parent(String name){
-		this.name = name;
+		this.name = name; // this라는 이름을 사용해서 인스턴스 변수에 값을 할당하는 역할을 함
 		System.out.println("부모 클래스의 문자열 파라미터 생성자 입니다! 이름 : " + name);
 	}
 	
