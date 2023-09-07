@@ -16,7 +16,7 @@ this() : 현재 클래스의 다른 생성자를 호출하는데 사용
 		  	   
 */
 class MyClass {
-	int myField;
+	int myField; // 앞에 기본적으로 this.myField가 써있는 것임.
 	// 첫 번째 생성자
 	MyClass() { //
 		this(0); // this()를 사용하여 다른 생성자 호출
