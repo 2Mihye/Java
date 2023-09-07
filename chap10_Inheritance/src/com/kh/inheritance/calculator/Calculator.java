@@ -18,7 +18,12 @@ public class Calculator {
 	}
 	// 4. 나누기
 	public int divide() {
+		if(num1 < 0) {
+			System.out.println("0으로 나눌 수 없습니다.");
+			return 0;
+		}
 		return num1 / num2;
+	
 	}
 	// 몫 이외의 나머지를 보고 싶습니다!
 }

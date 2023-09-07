@@ -6,16 +6,16 @@ public class CalculatorRun extends CalculatorForMod { // 상속
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		// System.out.println("숫자 1 : ");
-		// int num1 = sc.nextInt();
-		// System.out.println("숫자 2 : ");
-		// int num2 = sc.nextInt();
+		System.out.println("숫자 1 : ");
+		int num1 = sc.nextInt();
+		System.out.println("숫자 2 : ");
+		int num2 = sc.nextInt();
 		
-		
+
 		CalculatorForMod cal = new CalculatorForMod();
 		System.out.println("sum = " + cal.add());
 		System.out.println("mul = " + cal.multiply());
-		System.out.println("mod = " + cal.mod());
+		System.out.println("mod = " + cal.mod(cal.num1,cal.num2));
 		
 		
 		/*
