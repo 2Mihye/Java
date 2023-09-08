@@ -15,6 +15,7 @@ public class PersonController {
 	public void run() {
 		String personName = view.getPersonName();
 		model.setName(personName);
+		model.isValidName();
 		String name = model.info();
 		System.out.println("¿Ã∏ß : " + name);
 		
