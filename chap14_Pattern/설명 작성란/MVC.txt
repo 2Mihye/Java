@@ -1,0 +1,4 @@
+MVC(Model-View-Controller)패턴이란?
+	1. Model : 데이터와 비즈니스 로직 처리 // 생성자 getter setter
+	2. View :  사용자 인터페이스 // 보여지는 것 (시스템 프린트)
+	3. Controller : 모델과 뷰 사이의 상호작용 (출력 메서드)

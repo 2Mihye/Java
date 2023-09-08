@@ -1,0 +1,35 @@
+package com.kh.pattern.mvc.model;
+
+public class StudentModel {
+	/*
+	 1. 유저 정보 표현
+	 	private 이름 나이
+	 2. getter setter 만들기
+	 */
+
+	private String name; // 학생 이름
+	private int age; // 학생 나이
+	
+	public StudentModel(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	// Setter
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+	// Getter
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
+	
+}
