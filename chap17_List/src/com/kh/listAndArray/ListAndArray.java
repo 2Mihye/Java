@@ -9,8 +9,10 @@ public class ListAndArray {
 	
 
 	public static void main(String[] args) {
-		ListArray1();
-		ListArray2();
+		ListArray1(); // static
+		// ListArray2();
+		ListAndArray sArray = new ListAndArray();
+		sArray.ListArray2();
 	}
 	
 	public static void ListArray1() {
