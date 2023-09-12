@@ -6,6 +6,10 @@ public class Person {
 	 private double height;
 	 private double weight;
 	 
+	 public Person() {
+		 //
+	 }
+	 
 	// Setter
 	public void setName(String name) {
 		this.name = name;
@@ -37,14 +41,13 @@ public class Person {
 
 
 
-	 public Person(String name, int age, double height, double weight) {
-		 this.name = name;
+	 public Person(int age, double height, double weight) {
 		 this.age = age;
 		 this.height = height;
 		 this.weight = weight;
 	 }
 	 
-	 public void displayInfo() {
+	 public String information() {
 		 System.out.println("이름 : " + name + " / 나이 : " + age + " / 키 : " + height + " / 몸무게 : " + weight);
 	 }
 }
