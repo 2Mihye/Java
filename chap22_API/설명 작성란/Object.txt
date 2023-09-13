@@ -1,9 +1,9 @@
 Object란?
 	모든 Java 클래스의 최상위 클래스
 	모든 클래스가 기본적으로 Object를 상속받는다.
-	equals(), hashcode(), toString(), getClass(), clone(), finalize(), wait() 등등 있음
+	equals(), hashCode(), toString(), getClass(), clone(), finalize(), wait() 등등 있음
 	equals() : 객체의 내용이 다른 객체와 같은지 비교를 함.
-	hashcode() : 객체의 해시코드를 반환한다.
+	hashCode() : 객체의 해시코드를 반환한다.
 	toString() :  객체를 문자열로 표현하는데 사용됨.
 	getClass() : 객체의 클래스 정보를 반환한다.
 	clone() : 객체의 복사본을 생성
