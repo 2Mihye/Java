@@ -102,7 +102,7 @@ public class VoidNReturn {
         
 	}
     
-    public practice7() {
+    public calculate() { // practice7
     	/*계산기 만들기 (연산 결과 반환):
 
     	메서드 이름: calculate
@@ -113,7 +113,7 @@ public class VoidNReturn {
     */
 
     }
-    public practice8() {
+    public countWords() { // practice8
     	/*
     	단어 개수 세기:
 
@@ -125,7 +125,7 @@ public class VoidNReturn {
     */
 
     }
-    public practice9() {
+    public printTriangle() { //practice9
     	/*
     	삼각형 별 출력:
 
@@ -137,7 +137,7 @@ public class VoidNReturn {
     */
 
     }
-    public practice10() {
+    public generateLottoNumbers() { //practice10
     	/*
     	로또 번호 생성기:
     	Random
