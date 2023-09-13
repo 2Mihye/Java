@@ -36,6 +36,22 @@ public class DateMain {
 		System.out.println("시작일 : " + startDay);
 		LocalDate september = today.minusDays(12);
 		System.out.println("9월 : " + september);
+		
+		
+		
+		// 특정 날짜와 시간 생성하기 .of(날짜나 시간);
+		LocalDate date1 = LocalDate.of(2023, 9, 13);
+		LocalDate date2 = LocalDate.of(2024, 2, 14);
+		// date1.isBefore(date2)는 이전
+		// date1.isAfter(date2)는 이후
+		// 날짜 비교
+		if(date1.isAfter(date2)) {
+			System.out.println("수료일 이후입니다."); // date1은 date2 이후
+		} else if (date1.isBefore(date2)) {
+			System.out.println("수료일 이전입니다."); // date2는 date1 이후
+		} else {
+			System.out.println("당일입니다"); // 같은 날
+		}
 	}
 
 }
