@@ -22,6 +22,7 @@ public class WrapperMain {
 		double area = pi * Math.pow(radius, 2);
 		System.out.println("원의 넓이 : " + area);
 		
+		
 		// 문자열을 실수로 변환
 		String numStr = "3.14";
 		Double parsedDouble = Double.parseDouble(numStr);
