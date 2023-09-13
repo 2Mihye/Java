@@ -16,11 +16,26 @@ public class DateMain {
 		LocalDate currentDate = LocalDate.now();
 		System.out.println("현재 날짜 : " + currentDate);
 		
-		LocalTime today = LocalTime.now();
-		System.out.println("현재 시간 : " + today);
+		LocalTime currentTime = LocalTime.now();
+		System.out.println("현재 시간 : " + currentTime);
 		
 		LocalDateTime todayDate = LocalDateTime.now();
 		System.out.println("날짜 시간 : " + todayDate);
+		
+		// 날짜 계산
+		LocalDate today = LocalDate.now();
+		LocalDate futureDate = today.plusDays(7);
+		System.out.println("일주일 후 날짜 : " + futureDate);
+		
+		// minus와 plus를 활용하여 각각 2개씩 만들기
+		LocalDate lastDay = today.plusDays(154);
+		System.out.println("수료일 : " + lastDay);
+		LocalDate momBday = today.plusDays(817);
+		System.out.println("엄마 환갑 : " + momBday);
+		LocalDate startDay = today.minusDays(16);
+		System.out.println("시작일 : " + startDay);
+		LocalDate september = today.minusDays(12);
+		System.out.println("9월 : " + september);
 	}
 
 }
