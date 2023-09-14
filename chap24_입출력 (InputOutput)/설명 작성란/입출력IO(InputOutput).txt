@@ -1,0 +1,19 @@
+입출력 I/O(Input/Output)란?
+	컴퓨터 프로그래밍에서 데이터를 입력받거나 출력하는 과정을 의미함
+	파일에서 데이터를 읽거나 파일에 데이터를 쓰는 것 뿐만 아니라 키보드로부터 텍스트를 읽어오거나 화면에 출력하는 것
+	
+표준 입력과 표준 출력
+	Scanner sc = new Scanner (System.in);
+	System.out.println("이름을 입력하세요.");
+	System.in : 표준 입력을 읽음
+	System.out : 표준 출력을 출력
+	System이란 객체에서 입출력을 하는 것.
+	
+파일 입력과 출력
+	FileWriter : 파일쓰기 (객체)
+	FileReader : 파일읽기 (객체)
+	
+바이트 스트림
+	InputStream  : 바이트 단위로 데이터를 읽음
+	OutputStream : 바이트 단위로 데이터를 씀 / 이미지 동영상같은 파일을 다룰 때 좋음
+	
