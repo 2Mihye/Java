@@ -1,6 +1,7 @@
 package com.kh.practice;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +11,8 @@ public class PracticeMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PracticeMain pm = new PracticeMain();
-		pm.practice1();
+		// pm.practice1();
+		pm.practice2();
 	}
 	
 	public void practice1() { // 경로설정해서 파일 만들기
@@ -34,6 +36,37 @@ public class PracticeMain {
 			e.printStackTrace();
 		}
 
+		
+	}
+	
+	public void practice2() {
+		// 폴더를 만들고 폴더 안에 파일을 만들기 -> 파일 안에 내용 작성하기
+		// window 는 \를 사용하고 Linux or MacOs는 /를 사용한다.
+		// File.separator를 써서 구분함.
+		String folderPath = "C:\\Users\\user1\\Desktop\\lecture"; // 원하는 경로 설정
+		
+		// 폴더 만들기
+		String wpath = folderPath + "\\new";
+		File folder = new File(wpath);
+		
+		if(!folder.exists()) {
+			folder.mkdir();
+			System.out.println("Initialized empty new repository in " + folderPath + "\\new");
+		} else {
+			System.out.println("Reinitialized existingGit repository in C:\\Users\\user1\\Desktop\\lecture.");
+		}
+		
+		
+		try {
+			FileWriter fw = new FileWriter(wpath + "\\new.txt");
+			fw.write("선생님 수업 좋아욤");
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 		
 	}
 
