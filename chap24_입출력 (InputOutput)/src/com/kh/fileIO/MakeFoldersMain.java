@@ -4,7 +4,7 @@ import java.io.File;
 
 public class MakeFoldersMain {
 /*
- mkdirs : 바탕화면에 kh폴더를 만들고 image를 만들고 싶은데 kh폴더가 없을 때 쭉쭉쭉 만들어주는 녀석
+ mkdirs() : 바탕화면에 kh폴더를 만들고 image를 만들고 싶은데 kh폴더가 없을 때 쭉쭉쭉 만들어주는 녀석
  		  부모 디렉토리가 존재하지 않을 경우 중간 모든 디렉토리를 생성한다.
  		  
  */
