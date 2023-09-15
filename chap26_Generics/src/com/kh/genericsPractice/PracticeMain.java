@@ -8,6 +8,7 @@ public class PracticeMain {
 		// String Integer T 사용하여 출력
 		PracticeMain pm = new PracticeMain();
 		pm.practice1();
+		pm.practice2();
 	}
 	
 	public void practice1() {
@@ -26,5 +27,36 @@ public class PracticeMain {
 			System.out.println(item);
 		}
 	}
+	public void practice2() {
+		// Box 객체를 com.kh.genericspractice; 밑에 생성
+		// 정수형 데이터를 저장하는 Box 인스턴스 생성
+		Box<Integer> intBox = new Box<>();
+		intBox.put(9);
+		intBox.put(10);
+		intBox.put(11);
+		int intValue = intBox.get();
+		
+		// 문자열 데이터를 저장하는 Box 인스턴스 생성
+		Box<String> strBox = new Box<>();
+		strBox.put("블로섬");
+		strBox.put("버블");
+		strBox.put("버터컵");
+		String strValue = strBox.get();
+		
+		// 각 각 출력
+		System.out.println("Int Value : " + intValue);
+		System.out.println("String Value : " + strValue);
+		
+		// 향상된 for문 사용하여 값 모두 출력 // 일단 생략
+		
+		
+	}
+	/*
+	public static <T> void printBox(Box<T> item) {
+		for (T print : item) {
+			System.out.println(item);
+		}
+	}
+	*/
 
 }
