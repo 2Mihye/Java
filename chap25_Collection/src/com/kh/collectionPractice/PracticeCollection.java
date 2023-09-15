@@ -54,10 +54,10 @@ public class PracticeCollection {
 		myMap.put("¸Í±¸", 95);
 		myMap.put("Ã¶¼ö", 99);
 		
-		for(String crayon : myMap.keySet()) {
-			int grade = myMap.get(crayon);
-			System.out.println(crayon + " " + grade + "Á¡");
+		for(String kids : myMap.keySet()) {
+			int grade = myMap.get(kids);
+			System.out.println(kids + " " + grade + "Á¡");
 		}
 	}
-
+	
 }
