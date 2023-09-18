@@ -3,7 +3,7 @@ package com.kh.threadMain;
 import java.io.IOException;
 import java.util.Random;
 
-public class SimpleGame {
+public class SimpleGame {   
 	private static boolean isGameOver = false;
 
 	public static void main(String[] args) {
