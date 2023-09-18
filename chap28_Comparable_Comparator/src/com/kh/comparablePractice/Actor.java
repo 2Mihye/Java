@@ -28,7 +28,7 @@ public class Actor implements Comparable<Actor>{
 		actors.add(new Actor ("강동원", 42));
 		actors.add(new Actor ("최우식", 33));
 		
-		for(Actor actor : actors) { // 나이를 기준으로 정렬
+		for(Actor actor : actors) {
 			System.out.println(actor);
 		}
 	}
