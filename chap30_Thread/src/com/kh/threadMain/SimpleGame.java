@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class SimpleGame {   
 	private static boolean isGameOver = false;
-
+   
 	public static void main(String[] args) {
 		// 외부 클래스의 인스턴스를 생성
 		SimpleGame s = new SimpleGame();
