@@ -54,7 +54,7 @@ public class SimpleGame {
 				int randomValue = new Random().nextInt(10); // 임의의 숫자 생성
 				System.out.println("임의의 숫자 : " + randomValue);
 				
-				// 게임 루프 진연 시간
+				// 게임 루프 지연 시간
 				try {
 					Thread.sleep(1000); // 1초 대기
 				} catch (InterruptedException e) {
