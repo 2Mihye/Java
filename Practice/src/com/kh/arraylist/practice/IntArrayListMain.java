@@ -4,13 +4,13 @@ public class IntArrayListMain {
 
 	public static void main(String[] args) {
 		/*
-		 Çâ»óµÈ for¹®À» ÀÌ¿ëÇØ¼­ ¼ýÀÚ Ãâ·ÂÇÏ±â (String ÀÌ¿ëX)
+		 ï¿½ï¿½ï¿½ï¿½ forï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ (String ï¿½Ì¿ï¿½X)
 		 int[] numbers = {1,2,3,4,5};
 		 */
 		 int[] numbers = {1,2,3,4,5};
 		 for (int num : numbers) {
 			 System.out.println(num);
-		 }
+		 }   
 
 	}
 
