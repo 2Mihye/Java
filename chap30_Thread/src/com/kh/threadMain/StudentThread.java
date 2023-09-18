@@ -5,16 +5,16 @@ public class StudentThread extends Thread {
 	
 	public StudentThread(String name) {
 		this.studentName = name;
-	}
+	} 
 	
 	@Override
 	public void run() {
-		System.out.println(studentName + "ÀÌ(°¡) °øºÎ¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println(studentName + "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		try {
-			Thread.sleep(2000); // thread°¡ 2ÃÊ µ¿¾È ÀáÀÚ±â »óÅÂ·Î ÀÖµµ·Ï ÇÕ´Ï´Ù.
+			Thread.sleep(2000); // threadï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú±ï¿½ ï¿½ï¿½ï¿½Â·ï¿½ ï¿½Öµï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½.
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(studentName + "ÀÌ(°¡) °øºÎ¸¦ ¸¶Ä¨´Ï´Ù.");
+		System.out.println(studentName + "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½Î¸ï¿½ ï¿½ï¿½Ä¨ï¿½Ï´ï¿½.");
 	}
 }
