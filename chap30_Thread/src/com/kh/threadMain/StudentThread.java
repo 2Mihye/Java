@@ -6,7 +6,7 @@ public class StudentThread extends Thread {
 	public StudentThread(String name) {
 		this.studentName = name;
 	} 
-	
+	 
 	@Override
 	public void run() {
 		System.out.println(studentName + "��(��) ���θ� �����մϴ�.");
