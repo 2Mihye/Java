@@ -16,3 +16,17 @@
 	stack의 크기 출력 : stack.size();
 	stack이 비어있는지 확인 : stack.empty(); -> 비어있으면 true, 하나라도 있으면 false
 	stack에 1이 있는지 확인하고 1이 있다면 true : stack.contains(1);
+	
+ArrayList & Stack : 데이터를 저장하고 관리하는데 사용되는 자료구조
+ArrayList : 동적배열로 구현된 자료구조로 크기가 동적으로 조절 가능하고 데이터를 순서대로 저장하고 중간 삽입 및 삭제 작업에도 효율적이다. 데이터를 추가하거나 제거할 때 일반적으로 예외X
+Stack : 후입선출 순서를 따르고 임시로 데이터를 저장하고 간략하게 함수를 호출하고 복귀하는 식. 깊이우선탐색(DFS). pop연산을 빈스택에서 수행하려고 할 떄 예외가 발생!
+Queue : (FIFO,First In First Out)
+
+큐(Queue)란?
+	데이터를 선입선출(FIFO,First-In-First-Out)의 원칙에 따라 저장하고 관리하는 자료구조
+	데이터가 큐에 추가되면 가장 먼저 추가된 데이터가 가장 먼저 제거되는 방식
+	item 추가 : queue.offer(item)
+	요소 제거 반환 :  queue.poll();
+	front요소 확인 반환(요소제거X) : queue.peek();
+	크기 확인 : queue.size();
+	
