@@ -1,0 +1,18 @@
+스택(Stack)_큐(Queue)_덱(Deque)
+	데이터를 저장하고 관리하는 자료구조
+	각각의 데이터를 다양한 방식으로 저장하고 접근할 수 있도록 설계되어 있고, 다양한 알고리즘과 문제 해결에 사용된다.
+	
+스택(Stack)이란?
+	데이터를 후입선출(LIFO Last-In-First-Out)의 원칙에 따라 저장하는 자료구조
+	가장 최근에 삽입한 데이터가 가장 먼저 제거된다.
+	push(item) : 스택에 데이터 추가
+	pop() 	   : 스택의 맨 위(가장 최근)의 데이터를 제거하고 반환
+	peek()	   : 스택의 맨 위(가장 최근)의 데이터를 반환
+	
+	stack 값 추가 : stack.push();
+	stack 값 삭제 : stack.pop();
+	stack 전체 값 제거, 초기화 : stack.clear();
+	stack 가장 상단의 값 (가장 마지막에 넣은 값) 출력 : stack.peek();
+	stack의 크기 출력 : stack.size();
+	stack이 비어있는지 확인 : stack.empty(); -> 비어있으면 true, 하나라도 있으면 false
+	stack에 1이 있는지 확인하고 1이 있다면 true : stack.contains(1);
