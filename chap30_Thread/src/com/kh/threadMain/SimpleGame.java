@@ -7,16 +7,16 @@ public class SimpleGame {
 	private static boolean isGameOver = false;
    
 	public static void main(String[] args) {
-		// ï¿½Üºï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		// ¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º »ý¼º
 		SimpleGame s = new SimpleGame();
 		
-		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		// °ÔÀÓ ·çÇÁ ½º·¹µå ½ÃÀÛ
 		Thread gameThread = new Thread(s.new Gm());
 		gameThread.start();
 		
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½Ã·ï¿½ï¿½Ì¾î°¡ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		// °ÔÀÓ Á¾·á Á¶°Ç : ÇÃ·¹ÀÌ¾î°¡ Enter Å°¸¦ ´©¸£¸é °ÔÀÓ Á¾·á
 		try {
-			System.in.read(); // ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ð°ï¿½, ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			System.in.read(); // »ç¿ëÀÚ°¡ Å°º¸µå·Î ÀÔ·ÂÇÑ ¹ÙÀÌÆ®¸¦ ÀÐ°í »ç¿ëÀÚ°¡ EnterÅ°¸¦ ´©¸¦ ¶§ ±îÁö ÇÁ·Î±×·¥ ÀÏ½Ã ÁßÁö
 			
 			isGameOver = true;
 		} catch (IOException e) {
@@ -28,18 +28,18 @@ public class SimpleGame {
 		@Override
 		public void run() {
 			while (!isGameOver) {
-				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				//°ÔÀÓ ·çÇÁ ³»¿ë
 				int randomValue = new Random().nextInt(10);
-				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + randomValue);
+				System.out.println("ÀÓÀÇÀÇ ¼ýÀÚ : " + randomValue);
 				
-				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
+				// °ÔÀÓ ·çÇÁ Áö¿¬ ½Ã°£
 				try {
 					Thread.sleep(1000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
-				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ Enterï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+				// °ÔÀÓ Á¾·á Á¶°Ç Enter Å°¸¦ ´©¸£¸é °ÔÀÓÀÌ Á¾·áµË´Ï´Ù.
+				System.out.println("°ÔÀÓÀ» Á¾·áÇÏ·Á¸é Enter¸¦ ´©¸£¼¼¿ä.");
 			}
 		}
 	}
@@ -50,21 +50,21 @@ public class SimpleGame {
 		@Override
 		public void run() {
 			while(!isGameOver) {
-				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
-				int randomValue = new Random().nextInt(10); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
-				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + randomValue);
+				// °ÔÀÓ ·çÇÁ ³»¿ë
+				int randomValue = new Random().nextInt(10); // ÀÓÀÇÀÇ ¼ýÀÚ »ý¼º
+				System.out.println("ÀÓÀÇÀÇ ¼ýÀÚ : " + randomValue);
 				
-<<<<<<< HEAD
+
 				// °ÔÀÓ ·çÇÁ Áö¿¬ ½Ã°£
-=======
+
 				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
->>>>>>> a0f8e25d230d0dee9fff086470109503bef029cf
+
 				try {
-					Thread.sleep(1000); // 1ï¿½ï¿½ ï¿½ï¿½ï¿½
+					Thread.sleep(1000); //1ÃÊ ´ë±â
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+				System.out.println("°ÔÀÓ Á¾·á");
 			}
 		}
 	}
