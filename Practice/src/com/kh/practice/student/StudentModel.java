@@ -22,7 +22,7 @@ public class StudentModel {
 		this.score = score;
 	}
 	
-	// Getter
+	/* Getter
 	public String getName() {
 		return name;
 	}
@@ -36,5 +36,6 @@ public class StudentModel {
 	public String inform() {
 		return 
 	}
+	*/
 	
 }

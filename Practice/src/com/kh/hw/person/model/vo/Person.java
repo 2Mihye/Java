@@ -46,8 +46,9 @@ public class Person {
 		 this.height = height;
 		 this.weight = weight;
 	 }
-	 
+	 /*
 	 public String information() {
 		 System.out.println("이름 : " + name + " / 나이 : " + age + " / 키 : " + height + " / 몸무게 : " + weight);
 	 }
+	 */
 }

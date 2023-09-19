@@ -8,6 +8,7 @@ public class Main {
 	/*
 	 학생의 이름, 나이, 키 , 몸무게, 급여, 부서, 계속 입력하시겠습니까?(Y/N)
 	 */
+	/*
 	public static void main(String[] args) {
 		Student[] students = new Student[3];
 		Employee employee[] = new Employee[10];
@@ -19,7 +20,7 @@ public class Main {
 		for(Student student : students) {
 			System.out.println(student.information());
 		}
-		
+	
 		// while 이용해서 반복조건사용
 		char ch;
 		String name, dept;
@@ -57,5 +58,5 @@ public class Main {
 			System.out.println(employee[i].information());
 		}
 	}
-
+*/
 }
