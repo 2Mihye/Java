@@ -7,7 +7,10 @@ public class PracticeGraphMain {
 		PracticeGraph pg = new PracticeGraph(ver);
 		
 		pg.addEdge(0, 1);
+		pg.addEdge(1, 3);
+		pg.addEdge(3, 5);
 		pg.addEdge(1, 6);
+		pg.addEdge(5, 8);
 		pg.addEdge(6, 7);
 		pg.addEdge(6, 8);
 
