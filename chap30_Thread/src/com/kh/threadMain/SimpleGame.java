@@ -2,21 +2,21 @@ package com.kh.threadMain;
 
 import java.io.IOException;
 import java.util.Random;
-
+ 
 public class SimpleGame {   
 	private static boolean isGameOver = false;
    
 	public static void main(String[] args) {
-		// ¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ »ý¼º
+		// ï¿½Üºï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		SimpleGame s = new SimpleGame();
 		
-		// °ÔÀÓ ·çÇÁ ½º·¹µå ½ÃÀÛ
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Thread gameThread = new Thread(s.new Gm());
 		gameThread.start();
 		
-		// °ÔÀÓÀÇ Á¾·á Á¶°Ç : ÇÃ·¹ÀÌ¾î°¡ Enter Å°¸¦ ´©¸£¸é °ÔÀÓ Á¾·á
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½Ã·ï¿½ï¿½Ì¾î°¡ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		try {
-			System.in.read(); // »ç¿ëÀÚ°¡ Å°º¸µå·Î ÀÔ·ÂÇÑ ¹ÙÀÌÆ®¸¦ ÀÐ°í, »ç¿ëÀÚ°¡ Enter Å°¸¦ ´©¸¦ ¶§±îÁö ÇÁ·Î±×·¥ ÀÏ½Ã ÁßÁö
+			System.in.read(); // ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ð°ï¿½, ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			
 			isGameOver = true;
 		} catch (IOException e) {
@@ -28,18 +28,18 @@ public class SimpleGame {
 		@Override
 		public void run() {
 			while (!isGameOver) {
-				// °ÔÀÓ ·çÇÁ ³»¿ë
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				int randomValue = new Random().nextInt(10);
-				System.out.println("ÀÓÀÇÀÇ ¼ýÀÚ : " + randomValue);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + randomValue);
 				
-				// °ÔÀÓ ·çÇÁ Áö¿¬ ½Ã°£
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 				try {
 					Thread.sleep(1000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				// °ÔÀÓ Á¾·á Á¶°ÇÀº Enter Å°¸¦ ´©¸£¸é °ÔÀÓÀÌ Á¾·áµÈ
-				System.out.println("°ÔÀÓÀ» Á¾·áÇÏ·Á¸é EnterÀ» ´©¸£¼¼¿ä");
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Enter Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ Enterï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}
 		}
 	}
@@ -50,17 +50,21 @@ public class SimpleGame {
 		@Override
 		public void run() {
 			while(!isGameOver) {
-				// °ÔÀÓ ·çÇÁ ³»¿ë
-				int randomValue = new Random().nextInt(10); // ÀÓÀÇÀÇ ¼ýÀÚ »ý¼º
-				System.out.println("ÀÓÀÇÀÇ ¼ýÀÚ : " + randomValue);
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				int randomValue = new Random().nextInt(10); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + randomValue);
 				
+<<<<<<< HEAD
 				// °ÔÀÓ ·çÇÁ Áö¿¬ ½Ã°£
+=======
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
+>>>>>>> a0f8e25d230d0dee9fff086470109503bef029cf
 				try {
-					Thread.sleep(1000); // 1ÃÊ ´ë±â
+					Thread.sleep(1000); // 1ï¿½ï¿½ ï¿½ï¿½ï¿½
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("°ÔÀÓ Á¾·á");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 			}
 		}
 	}
