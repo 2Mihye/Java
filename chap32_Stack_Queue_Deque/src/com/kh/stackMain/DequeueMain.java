@@ -8,7 +8,7 @@ public class DequeueMain {
 			   Ω√¿€                       ≥°
 			    |                        |
 			    v                        v
-			 [First] <-> [Second] <-> [third]
+			 [First] <-> [Second] <-> [Third]
 	      ^                                     ^
 	      |                                     |
 	   [     ]                               [     ]
