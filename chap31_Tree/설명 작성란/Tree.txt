@@ -16,6 +16,11 @@
 
 이진 트리(Binary Tree)란?
 	각 노드가 최대 두 개의 자식 노드를 가지는 트리로 각 자식 노드는 왼쪽 자식과 오른쪽 자식으로 구분이 된다.
+	노드를 삽입하고 돌아가면서 출력하는 이진 트리
+ 	전위 순회(Pre-order traversal;Depth-First Search; 깊이 우선 탐색) : root(뿌리)를 가장 먼저 방문
+	중위 순회(In-order traversal;Depth-First Search; 깊이 우선 탐색) : 왼 쪽 하위 트리를 방문 후 root(뿌리)를 방문
+ 	후위 순회(Post-order traversal;Depth-First Search; 깊이 우선 탐색): 하위 트리 모두 방문 후 root(뿌리)로 방문
+ 	층별 순회(Level-order traversal;Breadth-First Search너비 우선 탐색) : 위 쪽 node들 부터 아래 방향으로 차례대로 방문
 이진 검색 트리(BST, Binary Search Tree)란?
 	이진 트리 중 중요한 종류로 데이터를 정렬된 순서로 저장하여 검색 및 삽입 연산에 효율적이다.
 	자가 균형 이진 탐색 트리(AVL,Adelson-Velsky and Landis)란?
