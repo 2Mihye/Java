@@ -32,10 +32,12 @@ public class Graph {
 		DFSUtil(startNode, visited);
 	}
 	
+	// 실제 깊이 우선 탐색 수행
 	private void DFSUtil(int currentNode, boolean[] visited) {
+		// 현재 노드를 방문한 것으로 표시하고 노드 번호를 출력한다
 		visited[currentNode] = true;
-		System.out.print(currentNode + " ");
-		
+		System.out.print(currentNode + " "); // 노드번호 출력
+		// 현재 노드와 연결된 인접 노드를 확인하고, 방문하지 않은 인접 노드를 재귀적(원래의 자리로 돌아오거나 되돌아오는)으로 방문한다.	
 		for (int neighbor : adjList[currentNode]) {
 			if ( !visited[neighbor]) {
 				DFSUtil(neighbor, visited);
