@@ -51,7 +51,7 @@ public class InetAddressMain {
 			byte[] ipAddress = address.getAddress();
 			System.out.println("IP Address를 byte로 얻음"); // while이나 for문 사용 가능
 			for(byte ip : ipAddress) {
-				System.out.println(ip + ".");
+				System.out.println(ip);
 			}
 			System.out.println();
 			
@@ -74,7 +74,7 @@ public class InetAddressMain {
 			System.out.println("멀티 캐스트 주소입니까? " + isMultiCast);
 			
 			// 호스트 이름을 이용하여 InetAddress 객체 생성
-			InetAddress name = InetAddress.getByName("www.google.com");
+			InetAddress name = InetAddress.getByName("www.daum.net");
 			System.out.println("IP 주소 이름 : "  + name.getHostAddress());
 			
 			// 호스트의 완전한 이름 가져오기 (전체 도메인 이름)

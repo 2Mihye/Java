@@ -35,5 +35,4 @@ public class ServerMain {
 		clientSocket.close();
 		serverSocket.close();
 	}
-
 }
