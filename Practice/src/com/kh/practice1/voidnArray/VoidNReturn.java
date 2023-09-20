@@ -28,8 +28,8 @@ public class VoidNReturn {
 	        
 	    }
 	
-	/*
-	public int practice2() {
+	
+	public int practice2() { // 팩토리얼 문제
 		Scanner scanner = new Scanner(System.in);
         System.out.println("숫자 하나를 입력하세요.");
         int n = scanner.nextInt();
@@ -42,7 +42,7 @@ public class VoidNReturn {
        
 	    
 	}
-	*/
+	
 	
 	public void practice3() {
 		 Scanner scanner = new Scanner(System.in);
