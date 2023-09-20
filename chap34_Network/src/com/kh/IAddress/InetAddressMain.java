@@ -80,10 +80,10 @@ public class InetAddressMain {
 			// 호스트의 완전한 이름 가져오기 (전체 도메인 이름)
 			// 호스트의 정규화된 (FQDN) 도메인의 이름을 얻음
 			// FQDN(Full Qualified Domain Name)
-			String hostFullName = address.getCanonicalHostName();
+			String hostFullName = name.getCanonicalHostName();
 			System.out.println("Full Name : " + hostFullName);
 			
-			// Loopback 주소 여부 확인
+			// LoopBack 주소 여부 확인
 			boolean isLoopBack = address.isLoopbackAddress();
 			System.out.println("뤂백인가요? " + isLoopBack);
 			
