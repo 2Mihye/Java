@@ -5,14 +5,14 @@ import java.util.Queue;
 
  //Graph 클래스 : 자료 구조를 나타낸다.	
 
-public class Graph {
+public class BFSGraph {
 	private int V; // 그래프의 정점 수
 	private LinkedList<Integer>[] adj; // 인접 리스트
 	
 	// 그래프 초기화
 	// Graph 클래스의 생성자에서 그래프의 정점 수(V)를 받아서 초기화
 	// adj 인접 리스트를 나타내고, 각 정점마다 인접한 정점들의 목록을 저장한다.
-	public Graph(int v) {
+	public BFSGraph(int v) {
 		this.V = v;
 		adj = new LinkedList[v];
 		for (int i = 0; i < v; ++i) {

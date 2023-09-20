@@ -8,7 +8,7 @@ import java.util.Queue;
 public class BFSMain {
 	public static void main(String[] args) {
 		// Graph 생성
-		Graph g = new Graph(6);
+		BFSGraph g = new BFSGraph(6);
 		
 		// 간선 추가
 		g.addEdge(0, 1);
