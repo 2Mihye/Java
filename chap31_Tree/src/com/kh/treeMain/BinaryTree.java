@@ -55,6 +55,7 @@ public class BinaryTree {
 		tree.insert(40);
 		tree.insert(60);
 		tree.insert(80);
+		tree.insert(90);
 		
 		System.out.println("이진 트리의 중위 순회 결과 : ");
 		tree.inOrderT();
