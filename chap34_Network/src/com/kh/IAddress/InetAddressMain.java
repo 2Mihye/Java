@@ -43,7 +43,7 @@ public class InetAddressMain {
 	public void InetSample() {
 		// 호스트 이름을 가져와서 객체 생성
 		try {
-			InetAddress address = InetAddress.getByName("www.naver.com");
+			InetAddress address = InetAddress.getByName("www.google.com");
 			
 			// IP 주소를 byte 배열로 읽기
 			// InetAddress 객체에서 IP 주소를 바이트 배열로 얻음
@@ -61,6 +61,31 @@ public class InetAddressMain {
 			for (InetAddress addr : alladdress) {
 				System.out.println(addr.getHostAddress());
 			}
+			// 호스트 이름 얻기
+			String hostName  = address.getHostName();
+			System.out.println("Host Name : " + hostName);	
+			
+			// 지역 호스트의 IP 주소 얻기
+			InetAddress localHost = InetAddress.getLocalHost();
+			System.out.println("Local Host Address : " + localHost.getHostAddress());
+			
+			// 멀티 캐스트 주소 여부 확인
+			boolean isMultiCast = address.isMulticastAddress();
+			System.out.println("멀티 캐스트 주소입니까? " + isMultiCast);
+			
+			// 호스트 이름을 이용하여 InetAddress 객체 생성
+			InetAddress name = InetAddress.getByName("www.google.com");
+			System.out.println("IP 주소 이름 : "  + name.getHostAddress());
+			
+			// 호스트의 완전한 이름 가져오기 (전체 도메인 이름)
+			// 호스트의 정규화된 (FQDN) 도메인의 이름을 얻음
+			// FQDN(Full Qualified Domain Name)
+			String hostFullName = address.getCanonicalHostName();
+			System.out.println("Full Name : " + hostFullName);
+			
+			// Loopback 주소 여부 확인
+			boolean isLoopBack = address.isLoopbackAddress();
+			System.out.println("뤂백인가요? " + isLoopBack);
 			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
