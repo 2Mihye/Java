@@ -1,4 +1,4 @@
-package com.kh.graphMain;
+package com.kh.DFS;
 
 public class GraphMain {
 

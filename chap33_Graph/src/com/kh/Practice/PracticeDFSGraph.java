@@ -2,11 +2,11 @@ package com.kh.Practice;
 
 import java.util.LinkedList;
 
-public class PracticeGraph {
+public class PracticeDFSGraph {
 	private int K;
 	private LinkedList<Integer>[] adjList; // 인접리스트 배열
 	
-	public PracticeGraph (int ver) {
+	public PracticeDFSGraph (int ver) {
 		K = ver;
 		adjList = new LinkedList[ver];
 		for (int i = 0; i < ver; i++) {
