@@ -6,6 +6,7 @@ import static org.junit.Assert.*; // 굳이 import를 여러개 둘 필요 없이 * 하나로 
 import org.junit.Test;
 
 public class JunitMain {
+	// Test는 Main 메서드 만들지 않는다!
 
 	@Test // 아래 객체 생성 후 클릭해서 JUnit import
 	public void testStringEqual() {
@@ -21,7 +22,6 @@ public class JunitMain {
 		assertNotEquals(expected, actual); // assertNotEquals import
 	}
 	
-	// Test는 Main 메서드 만들지 않는다!
 	
 	@Test
 	public void testArrayEqual() {
