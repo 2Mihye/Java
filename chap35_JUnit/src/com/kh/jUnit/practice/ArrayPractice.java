@@ -21,7 +21,7 @@ public class ArrayPractice {
 		return arr;
 	}
 	public void practice1() {
-		int[] arr = new int[10];
+		// int[] arr = new int[10];
 		
 		for(int i = 0; i < arr.length; i++) { 
 			arr[i] = i + 1; 
