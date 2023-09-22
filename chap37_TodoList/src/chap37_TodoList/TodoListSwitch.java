@@ -1,21 +1,29 @@
 package chap37_TodoList;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+// 주석은 ArrayList
+
 public class TodoListSwitch {
-	private ArrayList<String> tasks;
+	//private ArrayList<String> tasks;
+	private Map<Integer, String> tasks;
+	private int nextId;
 	
 	public TodoListSwitch() {
-		tasks = new ArrayList<>();
+		// tasks = new ArrayList<>();
+		tasks = new HashMap<>();
+		nextId = 1;
 	}
 	
 	public void addTask(String task) {
-		tasks.add(task);
+		// tasks.add(task);
+		tasks.put(nextId, task);
+		nextId++;
 	}
-	
+	/*
 	public void removetask(int index) {
 		if(index >= 0 && index < tasks.size()) {
 			tasks.remove(index);
@@ -27,11 +35,22 @@ public class TodoListSwitch {
 	public void editTask(int index, String task) {
 		tasks.set(index, task);
 	}
+	*/
+	public void removetask(int Id) {
+		if(tasks.containsKey(Id)) {
+			tasks.remove(Id);
+		} else {
+			System.out.println("유효하지 않음.");
+		}
+	}
 	
 	public void displayTasks() {
 		System.out.println("My TodoList");
-		for(int i = 0; i < tasks.size(); i++) {
+		/*for(int i = 0; i < tasks.size(); i++) {
 			System.out.println((i + 1) + "." + tasks.get(i));
+		}*/
+		for(Map.Entry<Integer, String> entry : tasks.entrySet()) {
+			System.out.println(entry.getKey() + " - " + entry.getValue());
 		}
 	}
 	
@@ -61,14 +80,6 @@ public class TodoListSwitch {
 				
 			} else if (choice.equalsIgnoreCase("list")) {
 				todoList.displayTasks();
-					
-			} else if (choice.equalsIgnoreCase("edit")) {
-				System.out.println("수정할 일의 번호 입력하기");
-				int index = Integer.parseInt(sc.nextLine()) -1;
-				String task = sc.nextLine();
-				// Map<Integer, String> editList = new HashMap<>();
-				// = editList.put(index, task); 
-				todoList.editTask(index, task);
 				
 			}else if (choice.equalsIgnoreCase("exit")) {
 				break;
