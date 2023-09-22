@@ -5,13 +5,13 @@ public class ExamPractice {
 	public static void main(String[] args) {
 		ExamPractice ep = new ExamPractice();
 		
-		// ep.problem13(); 정답!
-		 ep.problem14(); // 정답!
-		// ep.problem15(); 오답!
-		// ep.problem16(); 정답!
-		// ep.problem23(); 정답!
-		// ep.problem24(); 정답!
-		// ep.problem25(); 정답!
+		// ep.problem13(); // 정답!
+		// ep.problem14(); // 정답!
+		// ep.problem15(); // 오답!
+		// ep.problem16(); // 정답!
+		// ep.problem23(); // 정답!
+		// ep.problem24(); // 정답!
+		// ep.problem25(); // 정답!
 	}
 	
 	public void problem13() {
