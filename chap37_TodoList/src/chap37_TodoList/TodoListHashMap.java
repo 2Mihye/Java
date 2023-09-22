@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 // 주석은 ArrayList
 
-public class TodoListSwitch {
+public class TodoListHashMap {
 	//private ArrayList<String> tasks;
 	private Map<Integer, String> tasks;
 	private int nextId;
 	
-	public TodoListSwitch() {
+	public TodoListHashMap() {
 		// tasks = new ArrayList<>();
 		tasks = new HashMap<>();
 		nextId = 1;
@@ -55,11 +55,11 @@ public class TodoListSwitch {
 	}
 	
 	public static void main(String[] args) {
-		TodoListSwitch todoList = new TodoListSwitch();
+		TodoListHashMap todoList = new TodoListHashMap();
 
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("할 일 추가: add, 할 일 삭제: remove, 할 일 보기: list, 종료: Exit, 수정: Edit을 입력하세요");
+			System.out.println("할 일 추가: add, 할 일 삭제: remove, 할 일 보기: list, 종료: Exit를 입력하세요");
 			
 			String choice = sc.nextLine();
 			
