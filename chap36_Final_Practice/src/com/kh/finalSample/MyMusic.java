@@ -3,7 +3,7 @@ package com.kh.finalSample;
 import java.util.ArrayList;
 
 public class MyMusic {
-	public void runFruit() {
+	public void runMusic() {
 		ArrayList<Music> list = new ArrayList<Music>();
 		list.add(new Music("¹ß¶óµå", "½½ÇÄ"));
 		list.add(new Music("´í½º", "½Å³²"));
